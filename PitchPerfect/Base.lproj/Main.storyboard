@@ -17,20 +17,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5k-nW-eHz">
-                                <rect key="frame" x="129.5" y="397.5" width="155" height="155"/>
+                                <rect key="frame" x="129.5" y="299.5" width="155" height="155"/>
                                 <state key="normal" image="Record"/>
                                 <connections>
                                     <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZD-xa-HOw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfY-Xu-XW8">
-                                <rect key="frame" x="156.5" y="584.5" width="101" height="21"/>
+                                <rect key="frame" x="156.5" y="464.5" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAm-SO-gQg">
-                                <rect key="frame" x="175" y="635.5" width="64" height="64"/>
+                                <rect key="frame" x="175" y="495.5" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="pHV-8F-KPr"/>
                                     <constraint firstAttribute="height" constant="64" id="vgQ-dM-4ln"/>
@@ -46,10 +46,10 @@
                         <constraints>
                             <constraint firstItem="N5k-nW-eHz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="H86-9e-ds5"/>
                             <constraint firstItem="YAm-SO-gQg" firstAttribute="centerX" secondItem="wfY-Xu-XW8" secondAttribute="centerX" id="Mpu-rc-oPc"/>
-                            <constraint firstItem="YAm-SO-gQg" firstAttribute="top" secondItem="wfY-Xu-XW8" secondAttribute="bottom" constant="30" id="NCN-s0-pMe"/>
-                            <constraint firstItem="wfY-Xu-XW8" firstAttribute="top" secondItem="N5k-nW-eHz" secondAttribute="bottom" constant="32" id="TKH-iy-O2J"/>
-                            <constraint firstItem="N5k-nW-eHz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="W9i-gj-F65"/>
+                            <constraint firstItem="YAm-SO-gQg" firstAttribute="top" secondItem="wfY-Xu-XW8" secondAttribute="bottom" constant="10" id="NCN-s0-pMe"/>
+                            <constraint firstItem="wfY-Xu-XW8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="RCu-n3-wEu"/>
                             <constraint firstItem="wfY-Xu-XW8" firstAttribute="centerX" secondItem="N5k-nW-eHz" secondAttribute="centerX" id="nFQ-H9-snI"/>
+                            <constraint firstItem="N5k-nW-eHz" firstAttribute="bottom" secondItem="wfY-Xu-XW8" secondAttribute="top" constant="-10" id="oLt-Q4-LT4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oHV-nI-dSZ"/>
@@ -141,6 +141,9 @@
                                     <constraint firstAttribute="height" constant="64" id="rDP-qc-rmR"/>
                                 </constraints>
                                 <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="stopButtonPressed:" destination="pNF-Hb-6Mn" eventType="touchUpInside" id="9T3-Lo-gWq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D0d-cT-L8C"/>
